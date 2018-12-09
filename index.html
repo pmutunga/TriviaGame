@@ -1,0 +1,124 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    
+</head>
+<body>
+  
+    <div class="container">
+
+            <div class="jumbotron text-center">
+                    <h1 class="display-4">Totally Trivial Trivia!</h1>
+            </div>
+   
+            <!-- I need a way to display the questions and check if the user selects the correct answer -->
+            <div class="row questions"></div>
+                <div class="col triviaQuest">
+                    <h3>Time remimaining: <span id="dispTimerem"></span></h3>
+                    <hr>
+                    <!-- First Question -->
+                    <div class="form-group">
+                        <p class="question" id="q1"> What's the highest mountain the world?</p>
+                        
+                        <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q1option1" value="q1option1">
+                                <label class="form-check-label" for="q1option1">Everest</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q1option2" value="q1option2">
+                                    <label class="form-check-label" for="q1option2">Kenya</label>
+                                </div>
+                            <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q1option3" value="q1option3">
+                                    <label class="form-check-label" for="q1option3">Rockies</label>
+                                </div>
+                            <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="iq1option4" value="q1option4">
+                                    <label class="form-check-label" for="q1option4">Collingwood</label>
+                                    </div>
+                        </div> <!--End of first Question-->
+                    
+                    <!-- Second question  -->
+                    <div class="form-group">
+                            <p class="question" id="q2"> Which animal runs at the fastest speed in the world?</p>
+                            
+                            <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q2option1" value="q2option1">
+                                    <label class="form-check-label" for="q2option1">Leopard</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q2option2" value="q2option2">
+                                        <label class="form-check-label" for="q2option2">Cheetah</label>
+                                    </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q2option3" value="q2option3">
+                                        <label class="form-check-label" for="inlineRadio1">Tiger</label>
+                                    </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Jaguar</label>
+                                        </div>
+                            </div> <!--End of Second Question-->                    
+
+                    <!--Third question  -->
+                    <div class="form-group">
+                            <p class="question" id="q3"> Which is the largest lake in the North America?</p>
+                            
+                            <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Superior</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Ontario</label>
+                                    </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Eerie</label>
+                                    </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Huron</label>
+                                        </div>
+                            </div> <!--End of Third Question-->
+                    
+                    <!-- Fourth Question -->
+                    <div class="form-group">
+                            <p class="question" id="q4"> Which of these is NOT a river?</p>
+                            
+                            <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Missourri</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Credit Valley</label>
+                                    </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Niagara</label>
+                                    </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Ottawa</label>
+                                        </div>
+                            </div> <!--End of Fourth Question-->     
+                </div> <!--End of trivaQuest-->
+            </div>    <!--end of questions row    -->    
+
+
+
+
+    </div> <!--End of container-->
+    <!-- jQuery and javaScript file links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
