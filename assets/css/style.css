@@ -17,10 +17,21 @@
         font-family: monospace;
         font-size: 50px;
         color: white;
-      
+              
         /* Typography */
         text-align:center;
       
         /* Visual */
         background:teal;
+}
+#dispuserMsg {
+    color: red;
+}
+
+#dispCorrect{
+    color: green;
+}
+
+#dispIncorrect {
+    color: brown;
 }

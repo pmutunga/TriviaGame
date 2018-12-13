@@ -25,26 +25,32 @@
             <!-- I need a way to display the questions and check if the user selects the correct answer -->
             <div class="row questions"></div>
                 <div class="col triviaQuest">
-                    <h3>Time remimaining: <span id="dispTimerem"></span> seconds</h3>
+                    <div id="userMsg"> 
+                        <h3 id="timeMsg">Time remaining: <span id="dispTimerem"></span></h3>
+                        <p id = "dispuserMsg"> </p>
+                        <h6> <span id="dispCorrect"></span> <span id="dispIncorrect"></span></h6> 
+                       
+                                
+                    </div>
                     <hr>
                     <!-- First Question -->
                     <div class="form-group quest1">
                         <p class="question" id="q1"> What's name of the highest mountain the world?</p>
                         
                         <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="q1" id="q1option1" value="q1option1">
+                                <input class="form-check-input quest1rad" type="radio" name="q1" id="q1option1" value="q1option1">
                                 <label class="form-check-label" for="q1option1">Everest</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="q1" id="q1option2" value="q1option2">
+                                    <input class="form-check-input quest1rad" type="radio" name="q1" id="q1option2" value="q1option2">
                                     <label class="form-check-label" for="q1option2">Kenya</label>
                                 </div>
                             <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="q1" id="q1option3" value="q1option3">
+                                    <input class="form-check-input quest1rad" type="radio" name="q1" id="q1option3" value="q1option3">
                                     <label class="form-check-label" for="q1option3">Rockies</label>
                                 </div>
                             <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="q1" id="q1option4" value="q1option4">
+                                    <input class="form-check-input quest1rad" type="radio" name="q1" id="q1option4" value="q1option4">
                                     <label class="form-check-label" for="q1option4">Collingwood</label>
                                     </div>
                         </div> <!--End of first Question-->
@@ -54,19 +60,19 @@
                             <p class="question" id="q2"> Which animal runs at the fastest speed in the world?</p>
                             
                             <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="q2" id="q2option1" value="q2option1">
-                                    <label class="form-check-label" for="q2option1">Leopard</label>
+                                    <input class="form-check-input quest2rad" type="radio" name="q2" id="q2option1" value="q2option1">
+                                    <label class="form-check-label" for="q2option1rad">Leopard</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q2" id="q2option2" value="q2option2">
+                                        <input class="form-check-input quest2rad" type="radio" name="q2" id="q2option2" value="q2option2">
                                         <label class="form-check-label" for="q2option2">Cheetah</label>
                                     </div>
                                 <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q2" id="q2option3" value="q2option3">
+                                        <input class="form-check-input quest2rad" type="radio" name="q2" id="q2option3" value="q2option3">
                                         <label class="form-check-label" for="inlineRadio1">Tiger</label>
                                     </div>
                                 <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q2" id="q2option4" value="q2option4">
+                                        <input class="form-check-input quest2rad" type="radio" name="q2" id="q2option4" value="q2option4">
                                         <label class="form-check-label" for="q2option4">Jaguar</label>
                                         </div>
                             </div> <!--End of Second Question-->                    
@@ -76,19 +82,19 @@
                             <p class="question" id="q3"> Which is the largest lake in North America?</p>
                             
                             <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="q3" id="q3option1" value="q3option1">
+                                    <input class="form-check-input quest3rad" type="radio" name="q3" id="q3option1" value="q3option1">
                                     <label class="form-check-label" for="q3option1">Superior</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q3" id="q3option2" value="q3option2">
+                                        <input class="form-check-input quest3rad" type="radio" name="q3" id="q3option2" value="q3option2">
                                         <label class="form-check-label" for="q3option2">Ontario</label>
                                     </div>
                                 <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q3" id="q3option3" value="q3option3">
+                                        <input class="form-check-input quest3rad" type="radio" name="q3" id="q3option3" value="q3option3">
                                         <label class="form-check-label" for="q3option3">Eerie</label>
                                     </div>
                                 <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q3" id="q3option4" value="q3option4">
+                                        <input class="form-check-input quest3rad" type="radio" name="q3" id="q3option4" value="q3option4">
                                         <label class="form-check-label" for="q3option4">Huron</label>
                                         </div>
                             </div> <!--End of Third Question-->
@@ -98,19 +104,19 @@
                             <p class="question" id="q4"> Which of these is NOT a river?</p>
                             
                             <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4option1" value="q4option1">
+                                    <input class="form-check-input quest4rad" type="radio" name="q4" id="q4option1" value="q4option1">
                                     <label class="form-check-label" for="q4option1">Missourri</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q4" id="q4option2" value="q4option2">
+                                        <input class="form-check-input quest4rad" type="radio" name="q4" id="q4option2" value="q4option2">
                                         <label class="form-check-label" for="q4option2">Credit Valley</label>
                                     </div>
                                 <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q4" id="q4option3" value="q4option3">
+                                        <input class="form-check-input quest4rad" type="radio" name="q4" id="q4option3" value="q4option3">
                                         <label class="form-check-label" for="q4option3">Niagara</label>
                                     </div>
                                 <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q4" id="q4option4" value="q4option4">
+                                        <input class="form-check-input quest4rad" type="radio" name="q4" id="q4option4" value="q4option4">
                                         <label class="form-check-label" for="q4option4">Simcoe</label>
                                         </div>
                             </div> <!--End of Fourth Question-->     
