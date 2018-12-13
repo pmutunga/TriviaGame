@@ -102,18 +102,18 @@ function stopGame() {
 //Question 1
 $(".quest1rad").on("click", function(){
     var ansValue = $( "input[name='q1']:checked" ).val();
-    // console.log(ansValue);
+
     questsAnswered++;
     $(".quest1rad").attr('disabled', true);
     //check if correct. If correct increment numCorrect, else increment numIncorrect.
     if(correctAnswers.includes(String(ansValue))){
             
-        // console.log("great!");
+
         numCorrect++;
-        // console.log({numCorrect});
+
     } else{
         numIncorrect++;
-        // console.log({numIncorrect});
+
 
     }
  
@@ -124,18 +124,18 @@ $(".quest1rad").on("click", function(){
 
 $(".quest2rad").on("click", function(){
     var ansValue = $( "input[name='q2']:checked" ).val();
-    // console.log(ansValue);
+
     questsAnswered++;
     $(".quest2rad").attr('disabled', true);
     //check if correct. If correct increment numCorrect, else increment numIncorrect.
     if(correctAnswers.includes(String(ansValue))){
             
-        // console.log("great!");
+       
         numCorrect++;
-        // console.log({numCorrect});
+        
     } else{
         numIncorrect++;
-        // console.log({numIncorrect});
+        
     }
     checkifAnswered();
 });
@@ -144,19 +144,19 @@ $(".quest2rad").on("click", function(){
 
 $(".quest3rad").on("click", function(){
     var ansValue = $( "input[name='q3']:checked" ).val();
-    // console.log(ansValue);
+    
     questsAnswered++;
     userGuesses.push(ansValue);
     $(".quest3rad").attr('disabled', true);
      //check if correct. If correct increment numCorrect, else increment numIncorrect.
      if(correctAnswers.includes(String(ansValue))){
             
-        // console.log("great!");
+        
         numCorrect++;
-        // console.log({numCorrect});
+        
     } else{
         numIncorrect++;
-        // console.log({numIncorrect});
+        
     }   
     checkifAnswered();
 });
@@ -165,19 +165,19 @@ $(".quest3rad").on("click", function(){
 
 $(".quest4rad").on("click", function(){
     var ansValue = $( "input[name='q4']:checked" ).val();
-    // console.log(ansValue);
+   
     questsAnswered++;
     userGuesses.push(ansValue);
     $(".quest4rad").attr('disabled', true);
     //check if correct. If correct increment numCorrect, else increment numIncorrect.
     if(correctAnswers.includes(String(ansValue))){
             
-        // console.log("great!");
+        
         numCorrect++;
-        // console.log({numCorrect});
+     
     } else{
         numIncorrect++;
-        // console.log({numIncorrect});
+        
     }
     checkifAnswered();
 });
@@ -187,12 +187,12 @@ $(".quest4rad").on("click", function(){
 //Check if all questions are answered
 
 function checkifAnswered(){
-    // console.log(questsAnswered);
+    
     if(questsAnswered !== 4){
         $("#dispTimerem").text(timeRem);
         $("#dispuserMsg").text(" ");
     } else {
-        // console.log("you've answered all questions!");
+      
         $("#dispuserMsg").text("You've answered all questions!");
         
         $("#dispCorrect").text("Correct Answers: " + numCorrect + " ");
