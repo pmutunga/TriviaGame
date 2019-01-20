@@ -21,4 +21,8 @@ In this assignment, I created a Trivia game using JavaScript for the logic and j
 
 * The countdown timer will let you know how much time you have left.
 
+### See how it works
+
+[Play the game](https://pmutunga.github.io/TriviaGame/)
+
 
